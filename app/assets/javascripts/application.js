@@ -14,7 +14,11 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require angular/angular
+//= require angular/angular-route
+//= require ui-bootstrap/ui-bootstrap-tpls-0.10.0
 //= require_tree  ./proxies
 //= require_tree ./controllers
+//= require_tree ./directives
+
 //= require main
 

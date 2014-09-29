@@ -1,0 +1,23 @@
+<div class="modal-header">
+  <h3>{{headingText}} {{invitado.nombreInvitado}}</h3>
+</div>
+<div class="modal-body">
+  <form name="editInvitado" role="form" class="form-horizontal">
+            <div class="form-group">
+              <label class="col-xs-4 control-label" for="nombreInvitado">Nombre</label>
+              <div class="col-xs-8">
+                <input type="text" placeholder="Nombre de Invitado" ng-model="invitado.nombreInvitado" name="nombreInvitado" id="nombreInvitado" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-xs-4 control-label" for="apodo">Apodo</label>
+              <div class="col-xs-8">
+                <input type="text" placeholder="Apodo" name="apodo" id="apodo" class="form-control" ng-model="invitado.apodo">
+              </div>
+            </div>
+          </form>
+</div>
+<div class="modal-footer">
+  <button ng-click="saveInvitado()" class="btn btn-primary">Guardar</button>
+    <button ng-click="cancelModal()" class="btn btn-default">Cancelar</button>
+</div>

@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'main#index'
-  resources :invitados
+  resources :invitados, defaults: {format: :json}
 end

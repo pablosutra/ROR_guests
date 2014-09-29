@@ -3,7 +3,7 @@ class CreateInvitados < ActiveRecord::Migration
     create_table :invitados do |t|
       t.string :nombreInvitado
       t.string :apodo
-      t.boolean :confirmado
+      t.boolean :confirmado, :default => false
 
       t.timestamps
     end

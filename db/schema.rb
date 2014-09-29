@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140929172907) do
   create_table "invitados", force: true do |t|
     t.string   "nombreInvitado"
     t.string   "apodo"
-    t.boolean  "confirmado"
+    t.boolean  "confirmado",     default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
